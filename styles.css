@@ -1,0 +1,180 @@
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del botón "Añadir Nota" */
+.btn-add-note-container {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-add-note {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    font-size: 2rem; /* Aumentar tamaño del texto */
+    padding: 30px 80px; /* Tamaño del botón */
+    margin-bottom: 40px;
+    border: none;
+    display: inline-block;
+}
+
+.btn-add-note:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu-add-note {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 10px 0;
+    min-width: 160px;
+}
+
+.dropdown-menu-add-note a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu-add-note a:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-add-note-container:hover .dropdown-menu-add-note {
+    display: block;
+}
+
+/* Estilos para las tarjetas de notas */
+.note-card {
+    width: 250px; /* Tamaño fijo para que sean cuadrados */
+    height: 250px; /* Tamaño fijo para que sean cuadrados */
+    background-color: #ffeb3b; /* Color amarillo */
+    text-align: center;
+    padding: 20px; /* Aumentar el padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Posición relativa para el menú de tres puntos */
+    margin: 10px; /* Espacio entre tarjetas */
+}
+
+.note-card h5 {
+    margin: 10px 0;
+}
+
+/* Estilo para las opciones del menú de tres puntos */
+.note-card .options {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dots {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Estilo del menú desplegable de las opciones */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Mostrar menú al hacer clic en los tres puntos */
+.dots:hover + .dropdown-menu {
+    display: block;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: #fff; /* Enlaces en blanco */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del menú de perfil */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.dropdown-menu-profile {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 10px 0;
+    min-width: 160px;
+}
+
+.dropdown-menu-profile a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu-profile a:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-menu:hover .dropdown-menu-profile {
+    display: block;
+}
